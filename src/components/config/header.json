@@ -1,0 +1,29 @@
+{
+  "navItem": [
+    {
+      "name": "首页",
+      "href": "/home",
+      "key": "home"
+    },
+    {
+      "name": "产品简介",
+      "href": "/product",
+      "key": "product"
+    },
+    {
+      "name": "关于大拇哥",
+      "href": "/about",
+      "key": "about"
+    },
+    {
+      "name": "招商代理",
+      "href": "/sale",
+      "key": "sale"
+    },
+    {
+      "name": "售后服务",
+      "href": "/service",
+      "key": "service"
+    }
+  ]
+}

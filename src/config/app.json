@@ -1,0 +1,15 @@
+{
+  "name": "BigMu",
+  "iconFontCSS": "/iconfont.css",
+  "iconFontJS": "/iconfont.js",
+  "logoSrc": "http://oqahdqmro.bkt.clouddn.com/favicon.ico",
+  "baseURL": "http://localhost:8000/api/v1",
+  "openPages": [],
+  "noNavBgPages": [
+    "/admin"
+  ],
+  "api": {
+    "userLogin": "/user/login",
+    "user": "/user/:id"
+  }
+}
