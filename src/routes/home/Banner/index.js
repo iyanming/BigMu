@@ -1,61 +1,41 @@
 import React from 'react'
-import { Button, Icon } from 'antd'
-import QueueAnim from 'rc-queue-anim'
-import TweenOne, { TweenOneGroup } from 'rc-tween-one'
+import { Button } from 'antd'
+import { TweenOneGroup } from 'rc-tween-one'
 import BannerAnim, { Element } from 'rc-banner-anim'
-import 'rc-banner-anim/assets/index.css'
 import OverPack from 'rc-scroll-anim/lib/ScrollOverPack'
 import './index.less'
+import 'rc-banner-anim/assets/index.css'
+import config from './banner.json'
 const BgElement = Element.BgElement
 class HomeBanner extends React.Component {
   render () {
     const props = {...this.props}
-    delete props.isMode
-    const childrenData = [
-      {
-        title: '<img width="100%" src="https://zos.alipayobjects.com/rmsportal/HqnZZjBjWRbjyMr.png" />',
-        content: '一个高效的页面动画解决方案',
-        button: 'Learn More'
-      },
-      {
-        title: '<img width="100%" src="https://zos.alipayobjects.com/rmsportal/HqnZZjBjWRbjyMr.png" />',
-        content: '一个高效的页面动画解决方案',
-        button: 'Learn More'
-      }
-    ]
-    const childrenToRender = childrenData.map((item, i) => {
-      const title = item.title
-      const content = item.content
-      const button = item.button
+    const {banner} = config
+    const childrenToRender = banner.map((item, i) => {
+      const {title,content,button,bg,time} = item
       return (
         <Element
           key={i}
           prefixCls='banner-user-elem'
         >
           <BgElement
-            className={`bg bg${i}`}
+            className='bg'
+            style={{background: `url(${bg}) center`}}
             key='bg'
           />
-          <QueueAnim
-            type={['bottom', 'top']} delay={200}
-            className={`${props.className}-title`}
-            key='text'
-            id={`${props.id}-wrapperBlock${i}`}
-          >
-          <span
-            className='logo'
-            key='logo'
-            id={`${props.id}-titleBlock${i}`}
-            dangerouslySetInnerHTML={{
-              __html: title
-            }}
-          />
-            <p
-              key='content'
-              id={`${props.id}-contentBlock${i}`}
-            >
-              {content}
-            </p>
+          <div className={`${props.className}-content-bg`}>
+            <span>
+              <span className={`${props.className}-content-title`}>
+                {title}
+              </span>
+              <span className={`${props.className}-content-time`}>
+                {time}
+              </span>
+              <br />
+              <span className={`${props.className}-content-main`}>
+                {content}
+              </span>
+            </span>
             <Button
               type='ghost'
               key='button'
@@ -63,7 +43,8 @@ class HomeBanner extends React.Component {
             >
               {button}
             </Button>
-          </QueueAnim>
+          </div>
+
         </Element>
       )
     })
@@ -85,14 +66,6 @@ class HomeBanner extends React.Component {
             </BannerAnim>
           </div>
         </TweenOneGroup>
-        <TweenOne
-          animation={{y: '-=20', yoyo: true, repeat: -1, duration: 1000}}
-          className={`${props.className}-icon`}
-          style={{bottom: 40}}
-          key='icon'
-        >
-          <Icon type='down' />
-        </TweenOne>
       </OverPack>
     )
   }

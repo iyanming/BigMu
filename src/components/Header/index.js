@@ -6,7 +6,7 @@ import { Icon } from 'antd'
 
 import { enquireScreen, goto } from '../../utils'
 import './index.less'
-import navConfig from '../config/header.json'
+import navConfig from './header.json'
 
 class Header extends React.Component {
   constructor (props) {
