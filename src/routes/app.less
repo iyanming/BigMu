@@ -1,10 +1,11 @@
 @import "../themes/vars.less";
 
-html, body {
-  background: #fff;
-}
-
 :global {
+
+  html, body {
+    background: #fff;
+  }
+
   #nprogress {
     pointer-events: none;
 
@@ -64,14 +65,14 @@ html, body {
       }
     }
   }
-}
 
-@keyframes nprogress-spinner {
-  0% {
-    transform: rotate(0deg);
-  }
+  @keyframes nprogress-spinner {
+    0% {
+      transform: rotate(0deg);
+    }
 
-  100% {
-    transform: rotate(360deg);
+    100% {
+      transform: rotate(360deg);
+    }
   }
 }

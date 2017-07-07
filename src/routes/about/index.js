@@ -7,7 +7,11 @@ class AboutPage extends Component {
   render () {
     return (
       <div>
-        about
+        {this.props.children || (
+          <div>
+            info
+          </div>
+        )}
       </div>
     )
   }

@@ -1,6 +1,6 @@
 import React from 'react'
 import { connect } from 'dva'
-import { Header, Footer } from '../components'
+import { Footer, Header } from '../components'
 import { Helmet } from 'react-helmet'
 import NProgress from 'nprogress'
 import { config, withInArray } from '../utils'
@@ -34,7 +34,7 @@ const App = ({children, location, loading, routes}) => {
         <Header activeKey={activeKey} />
       </div>
       {children}
-      <Footer />
+      <Footer id='footer' key='footer' />
     </div>
   )
 }
