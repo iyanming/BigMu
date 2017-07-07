@@ -3,6 +3,7 @@ const path = require('path')
 export default {
   'entry': 'src/index.js',
   'theme': './theme.config.js',
+  'disableCSSModules': true,
   'env': {
     'development': {
       'extraBabelPlugins': [
@@ -10,7 +11,6 @@ export default {
         'transform-runtime',
         ['import', {'libraryName': 'antd', 'style': true}]
       ],
-      'disableCSSModules': true
     },
     'production': {
       'extraBabelPlugins': [
@@ -21,8 +21,7 @@ export default {
         'browsers': [
           'iOS >= 8', 'Android >= 4'
         ]
-      },
-      'disableCSSModules': true
+      }
     }
   }
 }

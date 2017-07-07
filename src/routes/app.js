@@ -19,7 +19,7 @@ const App = ({children, location, loading, routes}) => {
 
   // iconFont 本地化
   // const {iconFontJS, iconFontCSS} = config
-  const activeKey = routes[0].path || 'home'
+  const activeKey = routes[1].path || 'home'
   const isNoBg = withInArray(noNavBgPages, location.pathname)
   return (
     <div>

@@ -51,10 +51,7 @@ class Header extends React.Component {
     }
     if (href) {
       e.preventDefault()
-      setTimeout(() => {
-          goto(href)
-        }, 850
-      )
+      setTimeout(goto(href), 850)
     }
     this.setState(this.getAnimData(phoneOpen))
   }
@@ -86,16 +83,16 @@ class Header extends React.Component {
             className={`${this.props.className}-logo`}
             animation={{opacity: 0, type: 'from'}}
           >
-            <Link to='/' key='logo' onClick={(e) => {this.phoneClick(e, this.state.phoneOpen, '/', true)}}>
-             <span style={{fontSize: 20, color: '#fff'}}>
-               <Icon type="like-o" /> &ensp; 大拇哥
+            <Link to='/' key='logo' onClick={(e) => { this.phoneClick(e, this.state.phoneOpen, '/', true) }}>
+              <span style={{fontSize: 20, color: '#fff'}}>
+                <Icon type='like-o' /> &ensp; 大拇哥
              </span>
             </Link>
           </TweenOne>
           {
             this.state.isMode ? (
               <div className='phone-nav'>
-                <div className='phone-nav-bar' onClick={(e) => {this.phoneClick(e, this.state.phoneOpen)}}>
+                <div className='phone-nav-bar' onClick={(e) => { this.phoneClick(e, this.state.phoneOpen) }}>
                   <TweenOne component='em' animation={this.state.barAnim[0]} />
                   <TweenOne component='em' animation={this.state.barAnim[1]} />
                   <TweenOne component='em' animation={this.state.barAnim[2]} />

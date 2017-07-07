@@ -20,7 +20,15 @@ const Routers = ({history, app}) => {
         require('./routes/sale/route'),
         require('./routes/service/route')
       ]
-    }]
+    },
+    {
+      path: '*',
+      getComponent (nextState, cb) {
+        require.ensure([], require => {
+          cb(null, require('./routes/404'))
+        }, 'error')
+      },
+    },]
 
   return <Router history={history} routes={routes} />
 }

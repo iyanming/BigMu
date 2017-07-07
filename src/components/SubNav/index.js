@@ -114,7 +114,6 @@ class Page extends React.Component {
 
   render () {
     const {className, activeKey, config = subNavConfig} = this.props
-    console.log(activeKey)
     const {navItems, navTitle} = config
     const listToRender = this.getListChildren(navItems, activeKey, navTitle)
     return (
