@@ -3,7 +3,7 @@
  */
 import enquire from 'enquire.js'
 
-export default  cb => {
+export default cb => {
   /* eslint-disable no-unused-expressions */
   // and (min-width: 320px)
   enquire.register('only screen and (max-width: 767px)', {
