@@ -3,8 +3,8 @@ import { connect } from 'dva'
 import { Footer, Header } from '../components'
 import { Helmet } from 'react-helmet'
 import NProgress from 'nprogress'
-import { config, withInArray } from '../utils'
-
+import { config, withInArray, goto } from '../utils'
+import { BackTop, Icon } from 'antd'
 import '../themes/index.less'
 import './app.less'
 const App = ({children, location, loading, routes}) => {
@@ -30,6 +30,11 @@ const App = ({children, location, loading, routes}) => {
         {/* {iconFontJS && <script src={iconFontJS}> </script>} */}
         {/* {iconFontCSS && <link rel="stylesheet" href={iconFontCSS} />} */}
       </Helmet>
+      <BackTop visibilityHeight={-200} onClick={() => {goto('/product')}}>
+        <div className='ant-back-top-inner'>
+          <Icon type="aliwangwang-o" />
+        </div>
+      </BackTop>
       <div className={isNoBg && 'no-bg'}>
         <Header activeKey={activeKey} />
       </div>
