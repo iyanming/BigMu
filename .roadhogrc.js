@@ -10,6 +10,7 @@ export default {
         'transform-runtime',
         ['import', {'libraryName': 'antd', 'style': true}]
       ],
+      'disableCSSModules': true
     },
     'production': {
       'extraBabelPlugins': [
@@ -21,6 +22,7 @@ export default {
           'iOS >= 8', 'Android >= 4'
         ]
       },
+      'disableCSSModules': true
     }
   }
 }

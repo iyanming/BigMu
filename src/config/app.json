@@ -2,7 +2,7 @@
   "name": "BigMu",
   "iconFontCSS": "/app/iconfont.css",
   "iconFontJS": "/app/iconfont.js",
-  "logoSrc": "http://oqahdqmro.bkt.clouddn.com/favicon.ico",
+  "logoSrc": "/app/favicon.ico",
   "baseURL": "http://localhost:8000/api/v1",
   "openPages": [],
   "noNavBgPages": [
