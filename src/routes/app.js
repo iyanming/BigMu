@@ -31,7 +31,7 @@ const App = ({children, location, loading, routes}) => {
         {/* {iconFontCSS && <link rel="stylesheet" href={iconFontCSS} />} */}
       </Helmet>
       <div className='contact-back-top'>
-        <BackTop visibilityHeight={50} onClick={() => { goto('/product') }}>
+        <BackTop visibilityHeight={50} onClick={() => { goto('/contact') }}>
           <div className='ant-back-top-inner'>
             <Icon type="smile-o" />
           </div>

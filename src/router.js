@@ -15,6 +15,7 @@ const Routers = ({history, app}) => {
       childRoutes: [
         require('./routes/about/route'),
         require('./routes/admin/route'),
+        require('./routes/contact/route'),
         require('./routes/home/route'),
         require('./routes/product/route'),
         require('./routes/sale/route'),

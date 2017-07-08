@@ -3,17 +3,17 @@
  */
 import React, { Component } from 'react'
 import { SubNav } from '../../components'
-class ProductPage extends Component {
+class ContactPage extends Component {
   render () {
     return (
       <div>
-        <SubNav />
+        contact
       </div>
     )
   }
 }
 
-ProductPage.propTypes = {}
-ProductPage.defaultProps = {}
+ContactPage.propTypes = {}
+ContactPage.defaultProps = {}
 
-export default ProductPage
+export default ContactPage

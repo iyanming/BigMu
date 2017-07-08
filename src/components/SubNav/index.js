@@ -141,7 +141,9 @@ class Page extends React.Component {
               <ul>
                 {
                   navItems.map((item, i) => (
-                    <li key={i} className={`${activeKey === item.key ? 'active' : ''}`} style={{width: `${100 / navItems.length}%`}}
+                    <li
+                      key={i} className={`${activeKey === item.key ? 'active' : ''}`}
+                      style={{width: `${100 / navItems.length}%`}}
                     >
                       <Link to={item.href}>
                         {item.name}
