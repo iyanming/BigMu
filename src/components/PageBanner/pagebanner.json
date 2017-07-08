@@ -1,0 +1,18 @@
+{
+  "englishTitle": "Classes Case",
+  "chineseTitle": "工程案例",
+  "navButton": [
+    {
+      "href": "case",
+      "content": "最新案例"
+    },
+    {
+      "href": "hotel",
+      "content": "酒店"
+    },
+    {
+      "href": "working",
+      "content": "办公楼"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "navItems": [
+    {
+      "name": "公司简介",
+      "href": "/about/introduction",
+      "key": "introduction"
+    },
+    {
+      "name": "荣誉证书",
+      "href": "/about/honor",
+      "key": "honor"
+    },
+    {
+      "name": "工程案例",
+      "href": "/about/classesCase",
+      "key": "classesCase"
+    },
+    {
+      "name": "新闻中心",
+      "href": "/about/news",
+      "key": "news"
+    }
+  ],
+  "navTitle": "关于大拇哥"
+}
