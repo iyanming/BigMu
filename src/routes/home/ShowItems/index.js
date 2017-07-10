@@ -6,10 +6,10 @@ import TweenOne from 'rc-tween-one'
 import { Link } from 'dva/router'
 import './index.less'
 import showItemConfig from './showItem.json'
-class ShowItems extends React.Component {
 
+class ShowItems extends React.Component {
   render () {
-    const {showItems = [],title,subTitle} = showItemConfig
+    const {showItems = [], title, subTitle} = showItemConfig
     const demoToChildren = showItems.map((item, i) => {
       const {img, link, title, content} = item
       if (i < 3) {
@@ -58,6 +58,5 @@ class ShowItems extends React.Component {
     )
   }
 }
-
 
 export default ShowItems

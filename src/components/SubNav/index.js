@@ -6,7 +6,7 @@ import './index.less'
 import subNavConfig from './subnav.json'
 import { Link } from 'dva/router'
 
-class Page extends React.Component {
+class SubNav extends React.Component {
   constructor (props) {
     super(props)
 
@@ -159,12 +159,13 @@ class Page extends React.Component {
     )
   }
 }
-Page.propTypes = {
+
+SubNav.propTypes = {
   className: PropTypes.string,
   pathname: PropTypes.string
 }
 
-Page.defaultProps = {
+SubNav.defaultProps = {
   className: 'sub-nav'
 }
-export default Page
+export default SubNav

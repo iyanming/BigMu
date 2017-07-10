@@ -51,7 +51,7 @@ class Footer extends React.Component {
         {...props}
         playScale={isMode ? 0.5 : 0.2}
       >
-        <QueueAnim type='bottom' component='ul' key='ul' leaveReverse id={`${props.className}-ul`}>
+        <QueueAnim type='bottom' component='ul' key='ul'>
           <li key='logo' id={`${props.className}-logo`}>
             <p className='logo'>
               <img src={logoContent.img} width='100%' />

@@ -10,7 +10,8 @@
   "noNavBgPages": [
     "/home",
     "/",
-    "/contact"
+    "/contact",
+    "/sale"
   ],
   "api": {
     "userLogin": "/user/login",

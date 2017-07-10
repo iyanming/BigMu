@@ -2,10 +2,10 @@
  * Created by out_xu on 17/7/7.
  */
 import React from 'react'
-import ServiceSupport from './ServiceSupport/ServiceSupport'
-import ServiceNetwork from './ServiceNetwork/ServiceNetwork'
-import InvestmentAgent from './InvestmentAgent/InvestmentAgent'
-import Download from './Download/Download'
+import ServiceSupport from './ServiceSupport'
+import ServiceNetwork from './ServiceNetwork'
+import InvestmentAgent from './InvestmentAgent'
+import Download from './Download'
 
 const SalePage = () => {
   return (
