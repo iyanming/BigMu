@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es5",
+    "sourceMap": true
+  },
+  "exclude": [
+    "node_modules"
+  ],
+  "imgData": [
+    {
+      "img": "https://t.alipayobjects.com/images/rmsweb/T11aVgXc4eXXXXXXXX.svg",
+      "content": "大拇哥画册"
+    },
+    {
+      "img": "https://zos.alipayobjects.com/rmsportal/faKjZtrmIbwJvVR.svg",
+      "content": "合作计划书"
+    },
+    {
+      "img": "https://t.alipayobjects.com/images/rmsweb/T11aVgXc4eXXXXXXXX.svg",
+      "content": "产品介绍"
+    },
+    {
+      "img": "https://zos.alipayobjects.com/rmsportal/faKjZtrmIbwJvVR.svg",
+      "content": "中国质量检验协会认证"
+    }
+  ]
+}

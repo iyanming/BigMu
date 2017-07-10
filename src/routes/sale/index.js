@@ -1,19 +1,21 @@
 /**
  * Created by out_xu on 17/7/7.
  */
-import React, {
-  Component,
-  PropTypes,
-} from 'react'
+import React from 'react'
+import ServiceSupport from './ServiceSupport/ServiceSupport'
+import ServiceNetwork from './ServiceNetwork/ServiceNetwork'
+import InvestmentAgent from './InvestmentAgent/InvestmentAgent'
+import Download from './Download/Download'
 
-class SalePage extends Component {
-  render () {
-    return (
-      <div>
-        sale
-      </div>
-    )
-  }
+const SalePage = () => {
+  return (
+    <div className='sale-page'>
+      <ServiceSupport />
+      <InvestmentAgent />
+      <ServiceNetwork />
+      <Download />
+    </div>
+  )
 }
 
 SalePage.propTypes = {}
