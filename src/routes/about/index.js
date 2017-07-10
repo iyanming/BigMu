@@ -8,7 +8,7 @@ import SubNavConfig from './about.json'
 class AboutPage extends Component {
   render () {
     const {routes} = this.props
-    const activeKey = routes[2] ? routes[2].path : 'introduction'
+    const activeKey = routes[2].path ? routes[2].path : 'introduction'
     return (
       <div>
         <SubNav activeKey={activeKey} config={SubNavConfig} />

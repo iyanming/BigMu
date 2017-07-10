@@ -3,7 +3,7 @@
  */
 import React, { Component } from 'react'
 import { Link } from 'dva/router'
-import { Button } from 'antd'
+import { Tag } from 'antd'
 import './index.less'
 import pageBannerConfig from './pagebanner.json'
 
@@ -19,15 +19,15 @@ class pageBanner extends Component {
     const {englishTitle, chineseTitle, navButton = []} = config
     return (
       <div className='pageBannerWrapper'>
-        <h1>{englishTitle}</h1>
-        <h2>{chineseTitle}</h2>
+        <h1 style={{fontWeight: 400}}>{englishTitle}</h1>
+        <h1 style={{fontWeight: 400}}>{chineseTitle}</h1>
         <ul>
           {
             navButton.length !== 0 && navButton.map((item, index) => {
               return (
                 <li key={index} className='navButton'>
                   <Link to={item.href}>
-                    <Button size='large' type={activeKey === item.href ? 'primary' : 'default'}>{item.content}</Button>
+                    <Tag color={activeKey === item.href ? '#000' : null}>{item.content}</Tag>
                   </Link>
                 </li>
               )

@@ -22,7 +22,7 @@ class News extends Component {
               className='news-button'
               style={{marginBottom: '80px'}}
             >
-              <Link to='/exhibition/'>查看更多</Link>
+              <Link onClick={(e) => { e.preventDefault() }}>查看更多</Link>
             </TweenOne>
           </div>
         </div>

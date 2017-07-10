@@ -1,5 +1,10 @@
 module.exports = {
   path: 'about',
+  getIndexRoute (nextState, cb) {
+    require.ensure([], require => {
+      cb(null, {component: require('./introduction/index')})
+    }, 'introduction.chunk')
+  },
   childRoutes: [
     require('./classesCase/route'),
     require('./honor/route'),

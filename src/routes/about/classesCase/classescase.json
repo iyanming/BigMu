@@ -3,15 +3,15 @@
   "chineseTitle": "工程案例",
   "navButton": [
     {
-      "href": "case",
+      "href": "/about/classesCase/lastedCase",
       "content": "最新案例"
     },
     {
-      "href": "hotel",
+      "href": "/about/classesCase/hotelCase",
       "content": "酒店"
     },
     {
-      "href": "working",
+      "href": "/about/classesCase/workingCase",
       "content": "办公楼"
     }
   ]

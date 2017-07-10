@@ -11,7 +11,7 @@ class NewsCard extends React.Component {
     const {showItems = []} = newsCardConfig
     const demoToChildren = showItems.map((item, i) => {
       const {img, link, title, content} = item
-      if (i < 3) {
+      if (i) {
         return (
           <li key={i}>
             <Link to={link}>
