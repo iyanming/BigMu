@@ -1,0 +1,55 @@
+.content-wrapper {
+  margin: 0 auto;
+  max-width: 1200px;
+  & .content-info {
+    padding: 80px 0 0 0;
+    & .content-item {
+      height: 100px;
+      display: flex;
+      justify-content: center;
+      &-icon {
+        height: 50px;
+        width: 50px;
+        margin-right: 10px;
+        & i {
+          color: #321692;
+          font-size: 40px;
+        }
+      }
+      &-text {
+        width: 240px;
+        .title {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+  & .content-sale {
+    padding: 40px 0 50px 0;
+    &-title {
+      padding: 0 0 30px 0;
+      text-align: center
+    }
+    &-cards {
+      display: flex;
+      flex-wrap: wrap;
+      align-content: center;
+      &-item {
+        margin: 2%;
+        width: 45%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .content-wrapper {
+    & .content-sale {
+      &-cards {
+        &-item {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

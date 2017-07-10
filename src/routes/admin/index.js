@@ -10,7 +10,7 @@ class AdminPage extends Component {
       <div>
         <SubNav activeKey='home' config={adminConfig} />
         <div>
-          snsns
+
         </div>
       </div>
     )
