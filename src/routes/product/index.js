@@ -6,13 +6,11 @@ import TweenOne from 'rc-tween-one'
 import './index.less'
 import showItemConfig from './product.json'
 import SliderItems from './SliderItems'
-
 const ProductPage = ({children}) => {
-
   if (children) {
     return children
   }
-  const {hot = [], door = [], lock = [], title, subTitle} = showItemConfig
+  const {hot = {}, door = {}, lock = {}, title, subTitle} = showItemConfig
   return (
     <div className='product-wrapper'>
       <div className='product-header' style={{
@@ -37,9 +35,14 @@ const ProductPage = ({children}) => {
           {subTitle}
         </TweenOne>
       </div>
-      <SliderItems key='hot' title='热门单品' data={hot} />
-      <SliderItems key='lock' title='智能锁' data={lock} />
-      <SliderItems key='door' title='智能门' data={door} />
+      {children || (
+        <div className='product-content'>
+          <SliderItems key='hot' config={hot} />
+          <SliderItems key='lock' config={lock} />
+          <SliderItems key='door' config={door} />
+        </div>
+      )}
+
     </div>
   )
 }

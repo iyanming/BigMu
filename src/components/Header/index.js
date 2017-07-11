@@ -76,6 +76,7 @@ class Header extends React.Component {
     })
     return (
       <header
+        id='nav-header'
         className={`${this.props.className}-wrapper${this.state.phoneOpen ? ' open' : ''}`}
       >
         <div className={this.props.className}>

@@ -48,6 +48,7 @@ class InvestmentAgent extends React.Component {
         </QueueAnim>
         <QueueAnim
           className='page-text'
+          key='invest-items'
           type='bottom'
           leaveReverse
           delay={[0, 100]}

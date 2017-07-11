@@ -1,100 +1,184 @@
 {
   "title": "探寻最专业的智能门锁",
   "subTitle": "Professional Smart Door & Lock",
-  "hot": [
-    {
-      "title": "X-1",
-      "img": "/assets/product/lock/1.png",
-      "id": "1"
-    },
-    {
-      "title": "X-2",
-      "img": "/assets/product/lock/2.png",
-      "id": "2"
-    },
-    {
-      "title": "X-3",
-      "img": "/assets/product/lock/3.png",
-      "id": "3"
-    },
-    {
-      "title": "X-4",
-      "img": "/assets/product/lock/1.png",
-      "id": "1"
-    },
-    {
-      "title": "X-5",
-      "img": "/assets/product/lock/2.png",
-      "id": "2"
-    },
-    {
-      "title": "X-6",
-      "img": "/assets/product/lock/3.png",
-      "id": "3"
-    }
-  ],
-  "lock": [
-    {
-      "title": "X-1",
-      "img": "/assets/product/lock/1.png",
-      "id": "1"
-    },
-    {
-      "title": "X-2",
-      "img": "/assets/product/lock/2.png",
-      "id": "2"
-    },
-    {
-      "title": "X-3",
-      "img": "/assets/product/lock/3.png",
-      "id": "3"
-    },
-    {
-      "title": "X-4",
-      "img": "/assets/product/lock/1.png",
-      "id": "1"
-    },
-    {
-      "title": "X-5",
-      "img": "/assets/product/lock/2.png",
-      "id": "2"
-    },
-    {
-      "title": "X-6",
-      "img": "/assets/product/lock/3.png",
-      "id": "3"
-    }
-  ],
-  "door": [
-    {
-      "title": "X-1",
-      "img": "/assets/product/lock/1.png",
-      "id": "1"
-    },
-    {
-      "title": "X-2",
-      "img": "/assets/product/lock/2.png",
-      "id": "2"
-    },
-    {
-      "title": "X-3",
-      "img": "/assets/product/lock/3.png",
-      "id": "3"
-    },
-    {
-      "title": "X-4",
-      "img": "/assets/product/lock/1.png",
-      "id": "1"
-    },
-    {
-      "title": "X-5",
-      "img": "/assets/product/lock/2.png",
-      "id": "2"
-    },
-    {
-      "title": "X-6",
-      "img": "/assets/product/lock/3.png",
-      "id": "3"
-    }
-  ]
+  "hot": {
+    "name": "hot",
+    "title": "热门单品",
+    "data": [
+      {
+        "title": "X-1",
+        "img": "/assets/product/lock/1.png",
+        "tags": [
+          "新品",
+          "火爆"
+        ],
+        "id": "1"
+      },
+      {
+        "title": "X-2",
+        "img": "/assets/product/lock/2.png",
+        "tags": [
+          "新品",
+          "火爆"
+        ],
+        "id": "2"
+      },
+      {
+        "title": "X-3",
+        "img": "/assets/product/lock/3.png",
+        "tags": [
+          "新品",
+          "火爆"
+        ],
+        "id": "3"
+      },
+      {
+        "title": "X-4",
+        "img": "/assets/product/lock/1.png",
+        "tags": [
+          "新品",
+          "火爆"
+        ],
+        "id": "1"
+      },
+      {
+        "title": "X-5",
+        "img": "/assets/product/lock/2.png",
+        "tags": [
+          "新品",
+          "火爆"
+        ],
+        "id": "2"
+      },
+      {
+        "title": "X-6",
+        "img": "/assets/product/lock/3.png",
+        "tags": [
+          "新品",
+          "火爆"
+        ],
+        "id": "3"
+      }
+    ]
+  },
+  "lock": {
+    "name": "lock",
+    "title": "智能锁",
+    "data": [
+      {
+        "title": "X-1",
+        "img": "/assets/product/lock/1.png",
+        "tags": [
+          "新品",
+          "火爆"
+        ],
+        "id": "1"
+      },
+      {
+        "title": "X-2",
+        "img": "/assets/product/lock/2.png",
+        "tags": [
+          "新品",
+          "火爆"
+        ],
+        "id": "2"
+      },
+      {
+        "title": "X-3",
+        "img": "/assets/product/lock/3.png",
+        "tags": [
+          "新品",
+          "火爆"
+        ],
+        "id": "3"
+      },
+      {
+        "title": "X-4",
+        "img": "/assets/product/lock/1.png",
+        "tags": [
+          "新品",
+          "火爆"
+        ],
+        "id": "1"
+      },
+      {
+        "title": "X-5",
+        "img": "/assets/product/lock/2.png",
+        "tags": [
+          "新品",
+          "火爆"
+        ],
+        "id": "2"
+      },
+      {
+        "title": "X-6",
+        "img": "/assets/product/lock/3.png",
+        "tags": [
+          "新品",
+          "火爆"
+        ],
+        "id": "3"
+      }
+    ]
+  },
+  "door": {
+    "name": "door",
+    "title": "智能门",
+    "data": [
+      {
+        "title": "X-1",
+        "img": "/assets/product/lock/1.png",
+        "tags": [
+          "新品",
+          "火爆"
+        ],
+        "id": "1"
+      },
+      {
+        "title": "X-2",
+        "img": "/assets/product/lock/2.png",
+        "tags": [
+          "新品",
+          "火爆"
+        ],
+        "id": "2"
+      },
+      {
+        "title": "X-3",
+        "img": "/assets/product/lock/3.png",
+        "tags": [
+          "新品",
+          "火爆"
+        ],
+        "id": "3"
+      },
+      {
+        "title": "X-4",
+        "img": "/assets/product/lock/1.png",
+        "tags": [
+          "新品",
+          "火爆"
+        ],
+        "id": "1"
+      },
+      {
+        "title": "X-5",
+        "img": "/assets/product/lock/2.png",
+        "tags": [
+          "新品",
+          "火爆"
+        ],
+        "id": "2"
+      },
+      {
+        "title": "X-6",
+        "img": "/assets/product/lock/3.png",
+        "tags": [
+          "新品",
+          "火爆"
+        ],
+        "id": "3"
+      }
+    ]
+  }
 }

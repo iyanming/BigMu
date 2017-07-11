@@ -7,7 +7,7 @@ module.exports = {
   },
   childRoutes: [
     {
-      path: ':id',
+      path: ':type/:id',
       getComponents (nextState, callback) {
         require.ensure([], () => {
           callback(null, require('./Detail'))

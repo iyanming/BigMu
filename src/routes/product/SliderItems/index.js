@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Button } from 'antd'
+import { Button, Icon } from 'antd'
 import Slider from 'react-slick'
 import { Link } from 'dva/router'
 import './index.less'
@@ -21,12 +21,12 @@ class SliderItems extends Component {
   }
 
   render () {
-    const {data, title} = this.props
+    const {config: {data = [], name = '', title = ''}} = this.props
     const demoToChildren = data.map((item, i) => (
       <li
         key={`${title}-${i}`}
       >
-        <Link to={`/product/${item.id}`} className='content-wrapper'>
+        <Link to={`/product/${name}/${item.id}`} className='content-wrapper'>
           <span style={{
             backgroundImage: `url(${item.img})`,
             backgroundSize: `auto 100%`,
@@ -57,10 +57,14 @@ class SliderItems extends Component {
       <div className='product-slider'>
         <div className='product-slider-header'>
           <span>{title}</span>
-          <ButtonGroup>
-            <Button icon='left' onClick={this.previous} />
-            <Button icon='right' onClick={this.next} />
-          </ButtonGroup>
+          <div>
+            <Icon type='left' style={{marginRight: 10}} onClick={this.previous} />
+            <Icon type='right' style={{marginRight: 20}} onClick={this.next} />
+          </div>
+          {/* <ButtonGroup> */}
+          {/* <Button icon='left' onClick={this.previous} /> */}
+          {/* <Button icon='right' onClick={this.next} /> */}
+          {/* </ButtonGroup> */}
         </div>
         <Slider {...settings} ref={c => this.slider = c}>
           {demoToChildren}

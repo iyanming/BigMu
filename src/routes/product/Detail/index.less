@@ -1,0 +1,40 @@
+.product-detail {
+  &-content {
+    &-word {
+      padding-left: 50px;
+      padding-top: 50px;
+      h1 {
+        font-weight: lighter;
+        margin-right: 10px;
+      }
+
+    }
+  }
+  &-tabs {
+    margin-top: 10px;
+    &-title {
+      margin-left: -20px;
+    }
+    &-content {
+      height: 300px;
+      overflow: scroll;
+    }
+  }
+  &-about {
+    margin-bottom: 20px;
+  }
+
+  @media screen and (max-width: 768px) {
+    &-content {
+      &-word {
+        padding: 15px;
+      }
+    }
+    &-tabs {
+      margin-top: 10px;
+      &-content {
+        height: auto;
+      }
+    }
+  }
+}

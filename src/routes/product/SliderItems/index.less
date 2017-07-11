@@ -2,6 +2,10 @@
 
 .product-slider {
   .slider {
+    .slick-arrow  {
+      background: rgba(0, 0, 0, 0.3);
+      color: #000;
+    }
     margin: 0 16px;
     & li {
       padding: 10px 1%;
@@ -43,8 +47,10 @@
   }
   &-header {
     margin: 20px 16px 0 16px;
+    padding-bottom: 4px;
     display: flex;
     justify-content: space-between;
+    border-bottom: 1px solid #e5e5e5;
   }
 
   @media screen and (max-width: 768px) {
