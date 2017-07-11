@@ -1,0 +1,48 @@
+@import "../../../themes/common";
+
+@serviceBanner: service-banner;
+.service-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 500px;
+  background: url(/assets/service/1.png) center no-repeat ;
+  background-size: 200%;
+  .service-banner-title {
+    width: 100%;
+    text-align: center;
+    font-size: 2em;
+    color: #ffffff;
+    padding: 0.5em;
+  }
+  .service-banner-input-wrapper{
+    font-size: 1.8em;
+    .service-banner-input {
+      display: flex;
+      margin: 0 auto;
+      align-items: center;
+      width: 500px;
+      font-size: 0.8em;
+      padding: 0.5em 2em;
+      height: 2.1em;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .@{serviceBanner} {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(/assets/service/1.png) center no-repeat;
+    .service-banner-input-wrapper {
+      width: 80% !important;
+      .service-banner-input{
+        width: 100%;
+        font-size: 1em ;
+        padding: 0 1.5em;
+        height: 1.5em;
+      }
+    }
+  }
+}

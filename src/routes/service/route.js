@@ -11,5 +11,11 @@ module.exports = {
     require.ensure([], () => {
       callback(null, require('./index'))
     }, 'service.chunk')
-  }
+  },
+  childRoutes: [
+    require('./ServiceTab/product/route'),
+    // require('./honor/route'),
+    // require('./introduction/route'),
+    // require('./news/route')
+  ]
 }
