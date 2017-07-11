@@ -6,5 +6,6 @@ import Header from './Header'
 import Footer from './Footer'
 import SubNav from './SubNav'
 import PageBanner from './PageBanner'
+import Markdown from './Markdown'
 
-export { Header, Footer, SubNav, PageBanner }
+export { Header, Footer, SubNav, PageBanner, Markdown }
