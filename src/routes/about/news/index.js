@@ -13,19 +13,23 @@ class News extends Component {
   render () {
     return (
       <div className='news-wrapper'>
-        <PageBanner config={PageBannerConfig} />
-        <div className='newsCard'>
-          <NewsCard />
-          <div className='news-content'>
-            <TweenOne
-              key='a'
-              className='news-button'
-              style={{marginBottom: '80px'}}
-            >
-              <Link onClick={(e) => { e.preventDefault() }}>查看更多</Link>
-            </TweenOne>
+        {this.props.children ||
+          <div>
+            <PageBanner config={PageBannerConfig} />
+            <div className='newsCard'>
+              <NewsCard />
+              <div className='news-content'>
+                <TweenOne
+                  key='a'
+                  className='news-button'
+                  style={{marginBottom: '80px'}}
+                >
+                  <Link onClick={(e) => { e.preventDefault() }}>查看更多</Link>
+                </TweenOne>
+              </div>
+            </div>
           </div>
-        </div>
+        }
       </div>
     )
   }

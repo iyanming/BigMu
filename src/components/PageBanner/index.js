@@ -16,9 +16,9 @@ class pageBanner extends Component {
   render () {
     // 页面顶部标题和分页Banner
     const {activeKey, config = pageBannerConfig} = this.props
-    const {englishTitle, chineseTitle, navButton = []} = config
+    const {englishTitle, chineseTitle, navButton = [], bgImg = ''} = config
     return (
-      <div className='pageBannerWrapper'>
+      <div className='pageBannerWrapper' style={{background: `url(${bgImg}) center`}}>
         <h1 style={{fontWeight: 400}}>{englishTitle}</h1>
         <h1 style={{fontWeight: 400}}>{chineseTitle}</h1>
         <ul>

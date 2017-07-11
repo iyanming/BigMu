@@ -1,6 +1,4 @@
-@import '../../../../themes/common.less';
-
-@imgCard: imgCard;
+@import '../../../../themes/common';
 
 .case-content {
   text-align: center;
@@ -16,6 +14,7 @@
     font-size: 14px;
     box-shadow: 0 0 0 transparent;
     background: transparent;
+    margin:20px 20px 30px 20px;
     transition: box-shadow @animate-duration @ease-out, color @animate-duration @ease-out, background @animate-duration @ease-out;
     &:hover {
       color: @text-color-light;
@@ -24,94 +23,60 @@
   }
 }
 
-.@{imgCard} {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  position: relative;
-  & > h1, & > p {
-    position: relative;
-    top: 10%;
+@case: case-list;
+.@{case} {
+  width:80%;
+  margin:0 auto;
+  & > li {
+    width: 42%;
+    display: inline-block;
     text-align: center;
-  }
-  &-img-wrapper {
-    width: 98%;
-    position: absolute;
-    margin: auto;
-    left: 0;
-    right: 0;
-    padding: 20px 0;
-    & li {
-      width: 25%;
-      padding: 1%;
-      float: left;
-      & .content-wrapper {
-        border: 1px solid @line-color;
-        display: block;
-        background: #fff;
-        border-radius: 6px;
-        padding: 10px;
-        text-align: center;
-        height: 220px;
-        position: relative;
-        overflow: hidden;
-        .page-pro();
-        transition: box-shadow .3s @ease-out, transform .3s @ease-out;
-        & > span {
-          height: 100%;
-          display: block;
-          padding: 5%;
-        }
-        & p {
-          position: absolute;
-          width: 100%;
-          background: fade(@primary-color, 75);
-          left: 0;
-          bottom: -30px;
-          line-height: 30px;
-          color: #fff;
-          transition: bottom .3s @ease-out, background .3s @ease-out, color .3s @ease-out, line-height .3s @ease-out;
-        }
-        &:hover {
-          & p {
-            bottom: 0;
-          }
-        }
-      }
+    margin-bottom: 3%;
+    border-radius: 5px;
+    border: 1px solid #eee;
+    &:nth-child(2n + 1) {
+      margin-left: 6%;
+      margin-right: 3%;
     }
+    & a, & a img {
+      display: block;
+    }
+    & h3 {
+      line-height: 42px;
+      color: @title-color-exhibition;
+      background: @page-bg-color;
+    }
+    .page-pro();
   }
 }
 
-@media screen and (max-width: 767px) {
-  .@{imgCard}-wrapper {
-    overflow: hidden;
-    margin: -80px auto;
-    .@{imgCard} {
-      width: 90%;
-      > h1, > p {
-        position: relative;
-        top: 0;
-      }
-      > h1 {
-        font-size: 24px;
-        margin: 40px auto 20px;
-      }
+@details: case-details;
+.@{details} {
+  margin-bottom: 60px;
+  &-demo {
+    margin-bottom: 40px;
+  }
+  .replay-button {
+    float: right;
+    margin: -85px 10px;
+    position: relative;
+    bottom: 0;
+    right: 0;
+  }
+  & > pre {
+    max-height: 600px;
+    overflow: auto;
+  }
+  & h3 {
+    margin: 1em 0 .6em 0;
+  }
+}
 
-      ul {
-        top: 80px;
-        li {
-          display: block;
-          width: 100%;
-          padding: 2%;
-          span {
-            height: 168px;
-          }
-          p {
-            position: relative;
-            bottom: 0;
-          }
-        }
-      }
+@media screen and (max-width: 414px) {
+  .@{case} {
+    > li {
+      width: 100%;
+      margin-left: auto !important;
     }
   }
 }

@@ -10,11 +10,11 @@ class NewsCard extends React.Component {
   render () {
     const {showItems = []} = newsCardConfig
     const demoToChildren = showItems.map((item, i) => {
-      const {img, link, title, content} = item
+      const {img, title, content, passageId} = item
       if (i) {
         return (
           <li key={i}>
-            <Link to={link}>
+            <Link to={'/about/news/newscontent?id=' + passageId}>
               <div className='news-anim-demo-img'><img src={img} width='100%' /></div>
               <div className='news-anim-demo-text'>
                 <h2>{title}</h2>

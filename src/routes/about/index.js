@@ -9,9 +9,12 @@ class AboutPage extends Component {
   render () {
     const {routes} = this.props
     const activeKey = routes[2].path ? routes[2].path : 'introduction'
+    const isShow = routes[3] ? (routes[3].path !== 'newscontent') : true
     return (
       <div>
-        <SubNav activeKey={activeKey} config={SubNavConfig} />
+        {
+          isShow && <SubNav activeKey={activeKey} config={SubNavConfig} />
+        }
         {this.props.children || (
           <div>
             info

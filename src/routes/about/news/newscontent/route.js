@@ -1,11 +1,11 @@
+/**
+ * Created by Pororo on 17/7/11.
+ */
 module.exports = {
-  path: 'news',
-  childRoutes: [
-    require('./newscontent/route')
-  ],
+  path: 'newscontent',
   getComponents (nextState, callback) {
     require.ensure([], () => {
       callback(null, require('./index'))
-    }, 'news.chunk')
+    }, 'newscontent.chunk')
   }
 }
