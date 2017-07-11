@@ -4,7 +4,6 @@ import React, {
 } from 'react'
 import {Input, Icon} from 'antd'
 import './index.less'
-const Search = Input.Search
 class ServiceBanner extends Component {
 
   render() {

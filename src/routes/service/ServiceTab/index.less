@@ -39,25 +39,30 @@
     //margin: 40px auto 0;
   }
 }
+
 .@{showTabs} {
-  //height: 500px;
+  display: block;
   padding-top: 1px;
   width: 95%;
   margin: auto;
 
   .service-tabs-wrapper {
     width: 100%;
-    .service-tabs{
+    .service-tabs {
       display: flex;
       justify-content: space-around;
-      .service-tab-pane{
+      .service-tab-pane {
         width: 32%;
         background: @page-bg-color;
         height: 120px;
+        padding: 10px;
         box-shadow: 0 3px 5px fade(#000, 10);
         border-radius: 6px;
         overflow: hidden;
         margin-bottom: 60px;
+        .page-title{
+          font-size: 30px;
+        }
         & a {
           color: #999;
           display: block;
@@ -92,17 +97,16 @@
 }
 
 @media screen and (max-width: 768px) {
-  .@{showTabs}  {
+  .@{showTabs} {
     width: 90%;
     height: 1400px;
-    .page-text {
-      width: 100%;
-    }
     .service-tabs-wrapper {
       top: 160px;
-      ul li {
-        width: 100%;
-        margin: 0 auto 40px !important;
+      .service-tabs{
+        display: block;
+        .service-tab-pane{
+          width: 100%;
+        }
       }
     }
   }
