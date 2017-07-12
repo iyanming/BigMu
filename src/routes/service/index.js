@@ -9,16 +9,15 @@ import './index.less'
 import ServiceBanner from './ServiceBanner'
 import ServiceTab from './ServiceTab'
 class ServicePage extends Component {
-  render() {
+  render () {
     const {routes} = this.props
     // const activeKey = routes[2].path ? routes[2].path : 'introduction'
     return (
       <div>
-        <ServiceBanner/>
-        <ServiceTab/>
+        <ServiceBanner />
+        <ServiceTab />
         {this.props.children || (
           <div>
-            info
           </div>
         )}
       </div>

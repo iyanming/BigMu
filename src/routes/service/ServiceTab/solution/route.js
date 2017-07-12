@@ -2,10 +2,10 @@
  * Created by raoul on 17-7-11.
  */
 module.exports = {
-  path: 'product',
+  path: 'solution',
   getComponents (nextState, callback) {
     require.ensure([], () => {
       callback(null, require('./index'))
-    }, 'product.chunk')
+    }, 'solution.chunk')
   }
 }

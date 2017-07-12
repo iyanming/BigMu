@@ -5,22 +5,16 @@ import React, {
   Component,
   PropTypes
 } from 'react'
-import {Tabs} from 'antd'
-const TabPane = Tabs.TabPane
+import {Link} from 'dva/router'
+import ImgCard from '../imgCards'
 import './index.less'
-
-function callback(key) {
-  console.log(key)
-}
+import ServiceTabProductConfig from './ServicecTabProduct.json'
 
 class ServiceTabsProduct extends Component {
   render() {
+    const {title, cardItem} = ServiceTabProductConfig
     return (
-      <div className="service-tabs">
-        <div></div>
-        <div>65464</div>
-        <div>65464</div>
-      </div>
+      <ImgCard config={ServiceTabProductConfig}/>
     )
   }
 }

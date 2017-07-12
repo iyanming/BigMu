@@ -67,11 +67,10 @@ class Footer extends React.Component {
           className='copyright'
           id={`${props.className}-content`}
         >
-        <span>
+          <span>
           Copyright © 2017 The Project by <a href='#'>Ant Motion</a>. All Rights Reserved
         </span>
-          <p>
-          </p>
+          <p />
         </TweenOne>
       </OverPack>
     )

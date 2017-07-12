@@ -5,16 +5,15 @@ import React, {
 import {Input, Icon} from 'antd'
 import './index.less'
 class ServiceBanner extends Component {
-
-  render() {
+  render () {
     return (
       <div className='service-banner'>
-        <h1 className="service-banner-title">您需要帮助吗</h1>
-        <div className="service-banner-input-wrapper">
-          <Input className="service-banner-input"
-                 placeholder="搜索服务"
-                 prefix={<Icon type="search" style={{fontSize: 30}}/>}
-                 onPressEnter={value => console.log(value)}/>
+        <h1 className='service-banner-title'>您需要帮助吗</h1>
+        <div className='service-banner-input-wrapper'>
+          <Input className='service-banner-input'
+            placeholder='搜索服务'
+            prefix={<Icon type='search' style={{fontSize: 30}} />}
+            onPressEnter={value => console.log(value)} />
         </div>
       </div>
     )

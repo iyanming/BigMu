@@ -7,15 +7,14 @@ module.exports = {
   //     ])
   //   }, 'home.sub.chunk')
   // },
-  getComponents(nextState, callback){
+  getComponents (nextState, callback) {
     require.ensure([], () => {
       callback(null, require('./index'))
     }, 'service.chunk')
   },
   childRoutes: [
     require('./ServiceTab/product/route'),
-    // require('./honor/route'),
-    // require('./introduction/route'),
-    // require('./news/route')
+    require('./ServiceTab/solution/route'),
+    require('./ServiceTab/contact/route')
   ]
 }
