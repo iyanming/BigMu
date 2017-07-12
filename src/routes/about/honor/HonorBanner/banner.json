@@ -1,0 +1,13 @@
+{
+  "banner": [
+    {
+      "bg": "/assets/home/banner/1.png"
+    },
+    {
+      "bg": "/assets/home/banner/2.png"
+    },
+    {
+      "bg": "/assets/home/banner/1.png"
+    }
+  ]
+}

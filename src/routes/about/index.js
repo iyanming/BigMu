@@ -4,6 +4,7 @@
 import React, { Component } from 'react'
 import { SubNav } from '../../components/index'
 import SubNavConfig from './about.json'
+import './index.less'
 
 class AboutPage extends Component {
   render () {

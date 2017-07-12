@@ -1,19 +1,31 @@
-/**
- * Created by Pororo on 17/7/7.
- */
-import React, { Component } from 'react'
+import React from 'react'
+import './index.less'
+import HonorBanner from './HonorBanner'
+import honorBannerConfig from './config.json'
+// import { scrollScreen } from 'rc-scroll-anim'
+import HonorShowItem from './HonorShowItem'
 
-class HonorPage extends Component {
+class HonorPage extends React.Component {
   render () {
+    const honorBanner = () => {
+      const {englishTitle, chineseTitle = []} = honorBannerConfig
+      return (
+        <div className='pageBannerWrapper titleStyleTop'>
+          <h1>{englishTitle}</h1>
+          <h2>{chineseTitle}</h2>
+        </div>
+      )
+    }
     return (
-      <div>
-        honor
+      <div className='honor-page'>
+        <div>
+          {honorBanner()}
+        </div>
+        <HonorBanner />
+        <HonorShowItem />
       </div>
     )
   }
 }
-
-HonorPage.propTypes = {}
-HonorPage.defaultProps = {}
 
 export default HonorPage

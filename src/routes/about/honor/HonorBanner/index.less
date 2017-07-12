@@ -1,0 +1,78 @@
+@import "../../../../themes/common";
+
+@banner: honor-banner;
+:global {
+  .@{banner} {
+    width: 100vh;
+    // 如果在第一屏且导航位置为 relative, 一屏为 height: calc(~"100vh - 64px");
+    height: 80%;
+    position: relative;
+    text-align: center;
+    border-color: #666;
+    background: #fff;
+    margin: 0 auto;
+    &-wrapper, .banner-anim {
+      height: 100vh;
+    }
+    & .queue-anim-leaving {
+      position: relative !important;
+      width: auto;
+    }
+    .banner-user-elem {
+      height: 100%;
+      color: #fff;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .bg {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      overflow: hidden;
+      background-size: cover;
+    }
+  }
+
+  .banner-anim-thumb {
+    bottom: 10vh !important;
+    transition: height @animate-duration @ease-out;
+  }
+  .banner-anim-thumb-default {
+    span {
+      width: 10px;
+      height: 10px;
+      border-radius: 10px;
+      background: rgba(255, 255, 255, .5);
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .@{banner} {
+      &-content {
+        &-bg {
+          top: 85vh;
+          height: 15vh;
+        }
+        &-title {
+          font-size: 15px;
+        }
+      }
+
+      .banner-anim-thumb {
+        bottom: 15vh !important;
+      }
+    }
+
+  }
+
+  @media screen and (max-width: 414px) {
+    .@{banner} {
+      .bg {
+        background-attachment: inherit;
+      }
+    }
+  }
+}
