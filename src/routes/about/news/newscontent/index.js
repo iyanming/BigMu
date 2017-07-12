@@ -13,7 +13,7 @@ class NewsPage extends Component {
   render () {
     const config = NewsContentConfig
     const img = 'https://zos.alipayobjects.com/rmsportal/gGlUMYGEIvjDOOw.jpg'
-    const {title, time, content, prePassage, prePassageId} = config
+    const {title, time, content, prePassage, nextPassage, prePassageId, nextPassageId} = config
     return (
       <div>
         <div className='news-content-header' style={{
@@ -41,9 +41,14 @@ class NewsPage extends Component {
         <Card className='news-content-markdown'>
           <MarkDown content={content} />
         </Card>
-        <div className='pre-passage'>
+        <div className='passage'>
           <Link to={'/about/news/newscontent?id=' + prePassageId}>
             <Button className='pre-passage-btn'>上篇文章：{prePassage}</Button>
+          </Link>
+        </div>
+        <div className='passage'>
+          <Link to={'/about/news/newscontent?id=' + nextPassageId}>
+            <Button className='next-passage-btn'>下篇文章：{nextPassage}</Button>
           </Link>
         </div>
       </div>
